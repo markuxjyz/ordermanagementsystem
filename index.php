@@ -1,8 +1,8 @@
 <?php  
 $menu = [
-    ['name' => 'FishBall', 'price' => 30, 'quantity' => 10],
-    ['name' => 'Kikiam', 'price' => 40, 'quantity' => 10],
-    ['name' => 'CornDog', 'price' => 50, 'quantity' => 10],
+    ['name' => 'Hamburger', 'price' => 40, 'quantity' => 10],
+    ['name' => 'Footlong', 'price' => 70, 'quantity' => 10],
+    ['name' => 'Cheeseburger', 'price' => 50, 'quantity' => 10],
 ];
 ?>
 
@@ -11,10 +11,11 @@ $menu = [
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Canteen Prices</title>
+    <title>Order Management System</title>
 </head>
 <body>
-    <h1>Welcome to the canteen! Here are the prices:</h1>
+    <h1>Welcome to Bangel Burger Stand!</h1>
+    <h3>Here are the prices:</h3>
     <ul>
         <?php foreach ($menu as $item) : ?>
             <li><?= htmlspecialchars($item['name']); ?> - <?= htmlspecialchars($item['price']); ?> PHP</li>
